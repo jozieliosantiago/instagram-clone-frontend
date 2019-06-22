@@ -68,13 +68,6 @@ class Feed extends Component {
                                 {post.description}
                                 <span>{post.hashtags}</span>
                             </p>
-                            <section id="comment-list">
-                                { post.comments.map(commentText => (
-                                    <p key={commentText._id}>
-                                        <strong>{commentText.createdAt} </strong>{commentText.comment}
-                                    </p>
-                                )) }
-                            </section>
                         </footer>
                     </article>
                 )) }
